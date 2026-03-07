@@ -4,7 +4,10 @@
         img.draggable = false;
     })
 
-    if (images.length < 2) return;
+    if (images.length < 2) {
+        console.warn("Image compare requires at least two images.");
+        return;
+    }
 
     let dragging = false;
 
